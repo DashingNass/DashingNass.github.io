@@ -1,0 +1,85 @@
+/*Kleuren van de website*/
+/*#A2388D = paars
+#FFDF5D = geel
+#ffffff = wit
+#C7C6C6 =lichtgrijs
+#808080 = donkergrijs
+#2b3940 = zwart/groenig
+*/
+
+
+header img {
+    margin: 20px;
+    float: right;
+    width: 90px;
+    height: 90px;
+ }
+header nav {
+    display: flex;
+    background-color: white;
+    box-shadow: 1px;
+ }
+
+header nav li{
+    list-style-type: none;
+}
+
+
+
+
+#sort-form {
+    display: none;
+}
+#sort-form.clicked{
+    display: block;
+}
+#sort-button {
+    background-color: #C7C6C6;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.8em;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+/* vormgeving van de knop */
+.active,
+#sort-button:hover {
+    background-color: #A2388D;
+} /* wanneer er op de sorteer button wordt geklikt */
+
+.active,
+#filter-button:hover {
+    background-color: #A2388D;
+} /* wanneer er op de filter button wordt geklikt */
+
+
+
+#filter-form{
+    display: inline;
+
+}
+#filter-form.clicked{
+    display: block;
+}
+#filter-button{
+     background-color: #C7C6C6;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.8em;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
