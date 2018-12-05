@@ -7,32 +7,51 @@
 #2b3940 = zwart/groenig
 */
 
+body {
+    max-width: 100%;
+}
 
-header img {
-    margin: 20px;
-    float: right;
-    width: 90px;
-    height: 90px;
- }
-header nav {
-    display: flex;
+
+header {
     background-color: white;
-    box-shadow: 1px;
- }
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+/*    border-bottom: 1px solid #808080;*/
+    height: 100px;
+    margin-bottom: 20px;
+    margin: 20px;
+    box-shadow: inset  0 -0.1em 0 #e6e6e6;
 
-header nav li{
+
+}
+header a img {
+    width: 60px;
+    cursor: pointer
+}
+
+ul {
     list-style-type: none;
 }
 
-
-
+section {
+    background-image: url(/img/book-open.png);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 280px;
+    margin: 5px 0px 25px 0px;}
 
 #sort-form {
     display: none;
-}
-#sort-form.clicked{
+    }
+
+#sort-form.clicked {
     display: block;
 }
+
+/* vormgeving van de knop */
 #sort-button {
     background-color: #C7C6C6;
     color: #ffffff;
@@ -48,38 +67,12 @@ header nav li{
 }
 
 
-/* vormgeving van de knop */
+/* wanneer er op de sorteer button wordt geklikt */
 .active,
 #sort-button:hover {
     background-color: #A2388D;
-} /* wanneer er op de sorteer button wordt geklikt */
-
-.active,
-#filter-button:hover {
-    background-color: #A2388D;
-} /* wanneer er op de filter button wordt geklikt */
-
-
-
-#filter-form{
-    display: inline;
-
 }
-#filter-form.clicked{
-    display: block;
-}
-#filter-button{
-     background-color: #C7C6C6;
-    color: #ffffff;
-    cursor: pointer;
-    padding: 0.8em;
-    width: 100%;
-    border-radius: 20px;
-    text-align: center;
-    outline: none;
-    font-size: 1.15em;
-    text-transform: uppercase;
-    font-weight: 900;
-}
+
+
 
 

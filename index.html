@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WOW air 99 verhalen website</title>
+    <title>99 verhalen om te lezen voor het reizen</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,85 +11,122 @@
 
 <body>
 
-    <header>
 
-        <nav>
+
+
+<header>
+
+
+
+
+            <nav>
             <ul>
-                <li><a href="#" class="current">Alle verhalen</a></li>
+                <li><a href="#">Alle verhalen</a></li>
                 <li><a href="#">Favorieten</a></li>
                 <li><a href="#">Downloads</a></li>
                 <li><a href="#">Instellingen</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-
-            <a href="#"><img src="/img/wow-air-logo.svg" alt="logo"></a>
-            <a href="#"><img src="/img/user-icon-paars.svg" alt="logo-user"></a>
-
-
         </nav>
 
-    </header>
-<h1>99 verhalen </h1>
 
 
 
-    <!-- sorteer knop & formulier-->
-    <button id="sort-button">Sorteer</button>
-    <form id="sort-form" action="sorteer">
-            <input type="checkbox" name="a-z" value="a-z">A-Z
-            <input type="checkbox" name="datum" value="datum">Datum
-            <input type="checkbox" name="meest-gelezen" value="meest-gelezen">Meest gelezen
-            <input type="checkbox" name="populair" value="populair">Populair
-            <input type="submit" value="Submit">
-    </form>
 
 
-    <!--Filter & formulier button-->
-    <button id="filter-button">Filter</button>
-    <form id="filter-form" action="filter">
+           <a href="#"><img src="/img/wow-air-logo.svg" class="wow-logo" alt="logo"></a>
+           <a href="#"><img src="/img/user-icon-paars.svg" class="user-logo" alt="logo-user"></a>
+        </header>
 
 
-        <form action="filter">
-            <h2> Hoe lang wil je lezen?</h2>
-            <input type="checkbox" name="5min" value="5min">5 min
-            <input type="checkbox" name="10min" value="10min">10 min
-            <input type="checkbox" name="15min" value="15min">15 min
-            <input type="checkbox" name="20min" value="20min">20 min
-
-            <br>
-            <h2>Taalgebruik in het verhaal</h2>
-            <input type="checkbox" name="12+" value="=12+" checked> 12+
-            <input type="checkbox" name="16+" value="=16+" checked> 16+
-            <input type="checkbox" name="18+" value="=18+" checked> 18+
-            <input type="checkbox" name="geen" value="=geen" checked> geen
-
-            <br>
-
-            <h2>Welke genre wil je lezen? in het verhaal</h2>
-            <input type="checkbox" name="horror" value="=horror" checked>Horror
-            <input type="checkbox" name="komisch" value="=komisch" checked>Komisch
-            <input type="checkbox" name="chaotisch" value="=chaotisch" checked>Chaotisch
-            <input type="checkbox" name="romatiek" value="=romantiek" checked>Romantiek
-            <input type="checkbox" name="rustgevend" value="=rustgevend" checked>Rustgevend
-            <input type="checkbox" name="oorlog" value="=oorlog" checked>Oorlog
-
-            <h2>Kies je kleur</h2>
-            <input type="color">
-
-
-            <input type="submit" value="Submit">
+    <main>
+        <section id="intro">
+            <h1>99 verhalen voor op reis</h1>
+        </section>
 
 
 
+        <!-- sorteer knop & formulier-->
+        <button id="sort-button">Sorteer</button>
+        <form id="sort-form" action="sorteer">
+            <fieldset>
+                <input type="radio" id="a-z" value="a-z">
+                <label for="a-z">A-Z</label>
+
+                <input type="radio" id="datum" value="datum">
+                <label for="datum">Datum</label>
+
+                <input type="radio" id="meest-gelezen" value="meest-gelezen">
+                <label for="meest-gelezen">Meest gelezen</label>
+
+                <input type="radio" id="populair" value="populair">
+                <label for="populair">Populair</label>
+
+                <input type="radio" value="Submit">
+            </fieldset>
         </form>
-        <!--</select>-->
-    </form>
-
-
-    <script src="/javascript/script.js"></script>
 
 
 
+        <!-- filter knop & formulier-->
+        <button id="filter-button">Filter</button>
+        <form id="filter-form" action="filter">
+
+            <fieldset>
+                <p>Hoe lang wil je lezen?</p>
+                <input type="checkbox" id="5min" value="5min">
+                <label for="5min">5 min</label>
+
+                <input type="checkbox" id="10min" value="10min">
+                <label for="10min">10 min</label>
+
+                <input type="checkbox" id="15min" value="15min">
+                <label for="10min">15 min</label>
+
+                <input type="checkbox" id="20min" value="20min">
+                <label for="20min">20 min</label>
+
+                <p>Taalgebruik</p>
+                <input type="checkbox" id="12+" value="12+">
+                <label for="12+">12+</label>
+
+                <input type="checkbox" id="16+" value="16+">
+                <label for="16+">16+</label>
+
+                <input type="checkbox" id="18+" value="18+">
+                <label for="18+">18+</label>
+
+                <input type="checkbox" id="geen" value="geen">
+                <label for="geen">Geen</label>
+
+
+
+                <p>Kies een genre</p>
+                <input type="checkbox" id="horror" value="horror">
+                <label for="horror">Horror</label>
+
+                <input type="checkbox" id="humor" value="humor">
+                <label for="humor">Humor</label>
+
+                <input type="checkbox" id="chaotisch" value="chaotisch">
+                <label for="chaotisch">Chaotisch</label>
+
+                <input type="checkbox" id="romantiek" value="romantiek">
+                <label for="romantiek">Romantiek</label>
+
+                <input type="checkbox" id="rustgevend" value="rustgevend">
+                <label for="rustgevend">Rustgevend</label>
+
+                <input type="checkbox" id="oorlog" value="oorlog">
+                <label for="oorlog">Oorlog</label>
+            </fieldset>
+        </form>
+
+
+        <script src="/javascript/script.js"></script>
+
+
+    </main>
 </body>
 
 
