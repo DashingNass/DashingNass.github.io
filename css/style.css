@@ -11,6 +11,10 @@ body {
     max-width: 100%;
 }
 
+h1{
+    font-family: fantasy;
+
+}
 
 header {
     background-color: white;
@@ -18,34 +22,57 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-/*    border-bottom: 1px solid #808080;*/
+    /*    border-bottom: 1px solid #808080;*/
     height: 100px;
     margin-bottom: 20px;
     margin: 20px;
-    box-shadow: inset  0 -0.1em 0 #e6e6e6;
+    box-shadow: inset 0 -0.1em 0 #e6e6e6;
 
 
 }
+
 header a img {
     width: 60px;
-    cursor: pointer
-}
+    cursor: pointer;
+
+}/*logo en user-login*/
 
 ul {
     list-style-type: none;
 }
 
-section {
+/*
+main section {
     background-image: url(/img/book-open.png);
+    background-repeat: no-repeat;
+    background-position: center;
+background: #FFDF5D = geel
+;
+
+
     color: black;
     display: flex;
     justify-content: space-around;
     height: 280px;
-    margin: 5px 0px 25px 0px;}
+    margin: 5px 0px 25px 0px;
+}
+*/ /*old main -    NIET VERWIJDEREN!-*/
 
+main{
+
+    border-style: solid;
+}
+
+main img{
+    width: 100%;
+}
+
+main p{
+    font-size: 1em;
+}
 #sort-form {
     display: none;
-    }
+}
 
 #sort-form.clicked {
     display: block;
@@ -72,7 +99,3 @@ section {
 #sort-button:hover {
     background-color: #A2388D;
 }
-
-
-
-
