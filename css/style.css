@@ -2,9 +2,13 @@
 /*#A2388D = paars
 #FFDF5D = geel
 #ffffff = wit
+
 #C7C6C6 =lichtgrijs
+#F2F1F3 = lichter,lichter-grijs
 #808080 = donkergrijs
+
 #2b3940 = zwart/groenig
+
 */
 
 body {
@@ -12,9 +16,10 @@ body {
 }
 
 h1{
-    font-family: fantasy;
+font-family: sans-serif;
 
 }
+
 
 header {
     background-color: white;
@@ -30,22 +35,19 @@ header {
 
 
 }
-
 header a img {
-    width: 60px;
+    width: 4em;
     cursor: pointer;
 
-}/*logo en user-login*/
-
+}/*images van het logo en user-login*/
 ul {
     list-style-type: none;
 }
 
 
-
 main{
 
-    border-style: solid;
+    border: 1px solid;
 }
 
 main img{
@@ -55,16 +57,15 @@ main img{
 main p{
     font-size: 1em;
 }
+
 #sort-form {
     display: none;
+    background-color: #F2F1F3;
 }
-
 #sort-form.clicked {
     display: block;
 }
-
-/* vormgeving van de knop */
-#sort-button {
+#sort-button, #filter-button {
     background-color: #C7C6C6;
     color: #ffffff;
     cursor: pointer;
@@ -76,11 +77,19 @@ main p{
     font-size: 1.15em;
     text-transform: uppercase;
     font-weight: 900;
-}
-
-
-/* wanneer er op de sorteer button wordt geklikt */
-.active,
+}   /* vormgeving van de sorteer en filter knop */
+active,
 #sort-button:hover {
     background-color: #A2388D;
+}/* wanneer er op de sorteer button wordt geklikt */
+
+#filter-form{
+    display: none;
 }
+#filter-form.clicked{
+    display: block;
+}
+active,
+#filter-button:hover {
+    background-color: #A2388D;
+}/* wanneer er op de sorteer button wordt geklikt */
