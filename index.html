@@ -13,152 +13,173 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Alle verhalen</a></li>
                 <li><a href="#">Favorieten</a></li>
                 <li><a href="#">Downloads</a></li>
-                <li><a href="#">Instellingen</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
 
 
 
         <a href="#"><img src="/img/wow-air-logo.svg" class="wow-logo" alt="logo"></a>
-        <a href="#"><img src="/img/user-icon-paars.svg" class="user-logo" alt="logo-user"></a>
+
+
+
+        <span><a href="#"><img src="/img/profile.svg" alt=""></a></span>
+
     </header>
+    <hr>
+    <!--horizontale lijn-->
+
+    <section class="begin">
+        <h1>99 verhalen
+            om te lezen voor op reis</h1>
+    </section>
+
+
+    <!-- sorteer knop & formulier-->
+    <!--<form>
+     <fieldset>
+          <input type="radio" name="sorteer" value="a-z">
+            <label for="a-z">A-Z</label>
+
+            <input type="radio" name="sorteer" value="datum">
+            <label for="datum">Datum</label>
+
+            <input type="radio" name="sorteer" value="meest-gelezen">
+            <label for="meest-gelezen">Meest gelezen</label>
+
+            <input type="radio" name="sorteer" value="populair">
+            <label for="populair">Populair</label>
+
+            <input type="button" name="klik-sorteer" value="Sorteer">
+        </fieldset>
+    </form>
+    -->
+
+    <!--sorteer knop versie 2?-->
+    <!--<form class="sorteer-form" action="">
+        <fieldset>
+            <legend>Sorteer op</legend>
+            <input type="radio" name="sorteer" value="az" id="az">
+            <label for="az">A-Z</label>
+
+            <input type="radio" name="sorteer" value="datum" id="datum">
+            <label for="datum">Datum</label>
+
+            <input type="radio" name="sorteer" value="meestgelezen" id="meestgelezen">
+            <label for="meestgelezen">Meest gelezen</label>
+
+            <input type="radio" name="sorteer" value="populair" id="populair">
+            <label for="populair">Populair</label>
+</fieldset>
+    </form>-->
+
+    <form action="">
+        <legend><img src="/img/sort.svg" alt="" id="ding">Sorteer op</legend>
+        <select name="sorteer">
+            <option value="az">A-Z</option>
+            <option value="populair">Populair</option>
+            <option value="datum">Datum</option>
+            <option value="meestgelezen ">Meest gelezen</option>
+            <option value="meestgewaardeerd">Meest gewaardeerd</option>
+        </select>
+        <button>Ok</button>
+    </form>
+
+
+    <!-- filter knop & formulier-->
+    <!--
+    <button id="filter-button">Filter</button>
+    <form id="filter-form" action="filter">
+        <fieldset>
+            <p>Hoe lang wil je lezen?</p>
+            <input type="checkbox" id="5min" value="5min">
+            <label for="5min">5 min</label>
+
+            <input type="checkbox" id="10min" value="10min">
+            <label for="10min">10 min</label>
+
+            <input type="checkbox" id="15min" value="15min">
+            <label for="10min">15 min</label>
+
+            <input type="checkbox" id="20min" value="20min">
+            <label for="20min">20 min</label>
+
+            <p>Taalgebruik</p>
+            <input type="checkbox" id="12+" value="12+">
+            <label for="12+">12+</label>
+
+            <input type="checkbox" id="16+" value="16+">
+            <label for="16+">16+</label>
+
+            <input type="checkbox" id="18+" value="18+">
+            <label for="18+">18+</label>
+
+            <input type="checkbox" id="geen" value="geen">
+            <label for="geen">Geen</label>
 
 
 
-<section id="start">
-            <h1>99 verhalen voor op reis</h1>
-        </section>
+            <p>Kies een genre</p>
+            <input type="checkbox" id="horror" value="horror">
+            <label for="horror">Horror</label>
+
+            <input type="checkbox" id="humor" value="humor">
+            <label for="humor">Humor</label>
+
+            <input type="checkbox" id="chaotisch" value="chaotisch">
+            <label for="chaotisch">Chaotisch</label>
+
+            <input type="checkbox" id="romantiek" value="romantiek">
+            <label for="romantiek">Romantiek</label>
+
+            <input type="checkbox" id="rustgevend" value="rustgevend">
+            <label for="rustgevend">Rustgevend</label>
+
+            <input type="checkbox" id="oorlog" value="oorlog">
+            <label for="oorlog">Oorlog</label>
+        </fieldset>
+    </form>
+
+-->
 
 
-        <!-- sorteer knop & formulier-->
-        <button id="sort-button">Sorteer</button>
-        <form id="sort-form" action="sorteer">
-               <fieldset>
-                <input type="radio" id="a-z" value="a-z">
-                <label for="a-z">A-Z</label>
+    <main>
+        <article>
+            <span>
+                <img class="eye" src="/img/eye.svg" alt="">
+                <p>20x gelezen</p>
+            </span>
 
-                <input type="radio" id="datum" value="datum">
-                <label for="datum">Datum</label>
+            <h2>Gefrustreerd</h2>
 
-                <input type="radio" id="meest-gelezen" value="meest-gelezen">
-                <label for="meest-gelezen">Meest gelezen</label>
+            <button class="favorieten"> <i class="fa fa-heart-o" aria-hidden="true">12</i>
 
-                <input type="radio" id="populair" value="populair">
-                <label for="populair">Populair</label>
-
-                <input type="radio" value="Submit">
-            </fieldset>
-            </form>
-
-        <!-- filter knop & formulier-->
-        <button id="filter-button">Filter</button>
-        <form id="filter-form" action="filter">
-            <fieldset>
-                <p>Hoe lang wil je lezen?</p>
-                <input type="checkbox" id="5min" value="5min">
-                <label for="5min">5 min</label>
-
-                <input type="checkbox" id="10min" value="10min">
-                <label for="10min">10 min</label>
-
-                <input type="checkbox" id="15min" value="15min">
-                <label for="10min">15 min</label>
-
-                <input type="checkbox" id="20min" value="20min">
-                <label for="20min">20 min</label>
-
-                <p>Taalgebruik</p>
-                <input type="checkbox" id="12+" value="12+">
-                <label for="12+">12+</label>
-
-                <input type="checkbox" id="16+" value="16+">
-                <label for="16+">16+</label>
-
-                <input type="checkbox" id="18+" value="18+">
-                <label for="18+">18+</label>
-
-                <input type="checkbox" id="geen" value="geen">
-                <label for="geen">Geen</label>
+            <img class="thumbnail" src="/img/thumb-gefrustreerd.jpeg" alt="beroemd">
+            <!--afbeelding-->
 
 
 
-                <p>Kies een genre</p>
-                <input type="checkbox" id="horror" value="horror">
-                <label for="horror">Horror</label>
 
-                <input type="checkbox" id="humor" value="humor">
-                <label for="humor">Humor</label>
-
-                <input type="checkbox" id="chaotisch" value="chaotisch">
-                <label for="chaotisch">Chaotisch</label>
-
-                <input type="checkbox" id="romantiek" value="romantiek">
-                <label for="romantiek">Romantiek</label>
-
-                <input type="checkbox" id="rustgevend" value="rustgevend">
-                <label for="rustgevend">Rustgevend</label>
-
-                <input type="checkbox" id="oorlog" value="oorlog">
-                <label for="oorlog">Oorlog</label>
-            </fieldset>
-        </form>
-
-<main>
-<article>
-<h2>Beroemd</h2>
-<p>12</p>
-<i class="fa fa-heart-o" aria-hidden="true"></i>
-   <img src="/img/thumb-beroemd.png" alt="beroemd"> thumbnail van verhaal
-   <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij.</p>
-   <a href="#">Lees meer</a><!-- link lees meer-->
-   </article><!--Beroemd-->
-
-<article>
-<h2>Droom</h2>
-<p>15</p>
-<i class="fa fa-heart-o" aria-hidden="true"></i>
-   <img src="/img/thumb-droom.jpeg" alt="droom"><!--thumbnail van verhaal-->
-   <p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep.</p>
-   <a href="#">Lees meer</a><!-- link lees meer-->
-   </article><!--Droom-->
-
-<article>
-<h2>Verliefd</h2>
-<p>15</p>
-<i class="fa fa-heart-o" aria-hidden="true"></i>
-   <img src="/img/thumb-verliefd.jpeg" alt="verliefd"><!--thumbnail van verhaal-->
-   <p>Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag. En wat een heerlijke dag! Het was twaalf uur, onze fantastische zoon sliep net.</p>
-   <a href="#">Lees meer</a><!-- link lees meer-->
-   </article><!--Verliefd-->
-
-<article>
-<h2>Western</h2>
-<p>15</p>
-<i class="fa fa-heart-o" aria-hidden="true"></i>
-   <img src="/img/thumb-western.png" alt="western"><!--thumbnail van verhaal-->
-   <p>Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp. Een tumbleweed tuimelt over het zanderige plein. </p>
-   <a href="#">Lees meer</a><!-- link lees meer-->
-   </article><!--Western-->
-
-<article>
-<h2>Gefrustreerd</h2>
-<p>15</p>
-<i class="fa fa-heart-o" aria-hidden="true"></i>
-   <img src="/img/thumb-gefrustreerd.jpeg" alt="gefrustreerd"><!--thumbnail van verhaal-->
-   <p>Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp. Een tumbleweed tuimelt over het zanderige plein. </p>
-   <a href="#">Lees meer</a><!-- link lees meer-->
-   </article><!--Gefrustreerd-->
+            <footer>
+                <img src="/img/download-symbol-purple.svg" alt="">
+               <img class="like" src="/img/like.svg" alt="">
 
 
-</main>
+            </footer>
+        </article>
+        <!--Beroemd-->
 
 
 
-<script src="/javascript/script.js"></script>
+
+    </main>
+
+
+
+
+
+    <script src="/javascript/script.js"></script>
 </body>
 
 
