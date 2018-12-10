@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="homepage">
         <nav>
             <ul>
                 <li><a href="#">Favorieten</a></li>
@@ -24,7 +24,7 @@
 
 
 
-        <span><a href="#"><img src="/img/profile.svg" alt=""></a></span>
+       <a href="#"><img src="/img/profile.svg" alt=""></a>
 
     </header>
     <hr>
@@ -36,46 +36,10 @@
     </section>
 
 
-    <!-- sorteer knop & formulier-->
-    <!--<form>
-     <fieldset>
-          <input type="radio" name="sorteer" value="a-z">
-            <label for="a-z">A-Z</label>
-
-            <input type="radio" name="sorteer" value="datum">
-            <label for="datum">Datum</label>
-
-            <input type="radio" name="sorteer" value="meest-gelezen">
-            <label for="meest-gelezen">Meest gelezen</label>
-
-            <input type="radio" name="sorteer" value="populair">
-            <label for="populair">Populair</label>
-
-            <input type="button" name="klik-sorteer" value="Sorteer">
-        </fieldset>
-    </form>
-    -->
-
-    <!--sorteer knop versie 2?-->
-    <!--<form class="sorteer-form" action="">
-        <fieldset>
-            <legend>Sorteer op</legend>
-            <input type="radio" name="sorteer" value="az" id="az">
-            <label for="az">A-Z</label>
-
-            <input type="radio" name="sorteer" value="datum" id="datum">
-            <label for="datum">Datum</label>
-
-            <input type="radio" name="sorteer" value="meestgelezen" id="meestgelezen">
-            <label for="meestgelezen">Meest gelezen</label>
-
-            <input type="radio" name="sorteer" value="populair" id="populair">
-            <label for="populair">Populair</label>
-</fieldset>
-    </form>-->
 
     <form action="">
-        <legend><img src="/img/sort.svg" alt="" id="ding">Sorteer op</legend>
+        <legend>
+            <img src="/img/sort.svg" alt="" id="ding">Sorteer op</legend>
         <select name="sorteer">
             <option value="az">A-Z</option>
             <option value="populair">Populair</option>
@@ -83,97 +47,123 @@
             <option value="meestgelezen ">Meest gelezen</option>
             <option value="meestgewaardeerd">Meest gewaardeerd</option>
         </select>
-        <button>Ok</button>
+        <button>ok</button>
     </form>
-
-
-    <!-- filter knop & formulier-->
-    <!--
-    <button id="filter-button">Filter</button>
-    <form id="filter-form" action="filter">
-        <fieldset>
-            <p>Hoe lang wil je lezen?</p>
-            <input type="checkbox" id="5min" value="5min">
-            <label for="5min">5 min</label>
-
-            <input type="checkbox" id="10min" value="10min">
-            <label for="10min">10 min</label>
-
-            <input type="checkbox" id="15min" value="15min">
-            <label for="10min">15 min</label>
-
-            <input type="checkbox" id="20min" value="20min">
-            <label for="20min">20 min</label>
-
-            <p>Taalgebruik</p>
-            <input type="checkbox" id="12+" value="12+">
-            <label for="12+">12+</label>
-
-            <input type="checkbox" id="16+" value="16+">
-            <label for="16+">16+</label>
-
-            <input type="checkbox" id="18+" value="18+">
-            <label for="18+">18+</label>
-
-            <input type="checkbox" id="geen" value="geen">
-            <label for="geen">Geen</label>
-
-
-
-            <p>Kies een genre</p>
-            <input type="checkbox" id="horror" value="horror">
-            <label for="horror">Horror</label>
-
-            <input type="checkbox" id="humor" value="humor">
-            <label for="humor">Humor</label>
-
-            <input type="checkbox" id="chaotisch" value="chaotisch">
-            <label for="chaotisch">Chaotisch</label>
-
-            <input type="checkbox" id="romantiek" value="romantiek">
-            <label for="romantiek">Romantiek</label>
-
-            <input type="checkbox" id="rustgevend" value="rustgevend">
-            <label for="rustgevend">Rustgevend</label>
-
-            <input type="checkbox" id="oorlog" value="oorlog">
-            <label for="oorlog">Oorlog</label>
-        </fieldset>
-    </form>
-
--->
 
 
     <main>
+
         <article>
-            <span>
-                <img class="eye" src="/img/eye.svg" alt="">
-                <p>20x gelezen</p>
-            </span>
+<!--            <h2>Beroemd</h2>-->
+            <button class="favorieten"><i class="fa fa-heart-o" aria-hidden="true"></i>
 
-            <h2>Gefrustreerd</h2>
-
-            <button class="favorieten"> <i class="fa fa-heart-o" aria-hidden="true">12</i>
-
-            <img class="thumbnail" src="/img/thumb-gefrustreerd.jpeg" alt="beroemd">
-            <!--afbeelding-->
+            </button>
 
 
-
-
+            <a href="#"><img class="thumbnail" src="/img/thumbnail-beroemd.jpg" alt="beroemd"></a>
             <footer>
-                <img src="/img/download-symbol-purple.svg" alt="">
-               <img class="like" src="/img/like.svg" alt="">
-
-
+                <ul>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                </ul>
+                <button><img src="./img/like.svg" alt="like">Like</button>
+                <button><img src="./img/download-symbol-purple.svg" alt="download">Download</button>
             </footer>
         </article>
-        <!--Beroemd-->
+
+        <article>
 
 
+<!--            <h2>Droom</h2>-->
+            <button class="favorieten"> <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
 
+
+            <a href="#"><img class="thumbnail" src="/img/thumbnail-droom.jpg" alt="droom"></a>
+            <footer>
+                <ul>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                </ul>
+                <button><img src="./img/like.svg" alt="like">Like</button>
+                <button><img src="./img/download-symbol-purple.svg" alt="download">Download</button>
+            </footer>
+        </article>
+
+        <article>
+<!--            <h2>Gefrustreerd</h2>-->
+
+            <button class="favorieten"> <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+
+
+            <a href="#"><img class="thumbnail" src="/img/thumbnail-gefrustreerd.jpg" alt="gefrustreerd"></a>
+            <footer>
+                <ul>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                </ul>
+                <button><img src="./img/like.svg" alt="like">Like</button>
+                <button><img src="./img/download-symbol-purple.svg" alt="download">Download</button>
+            </footer>
+        </article>
+
+        <article>
+<!--            <h2>Verliefd</h2>-->
+
+            <button class="favorieten"> <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+
+
+            <a href="#"><img class="thumbnail" src="/img/thumbnail-verliefd.jpg" alt="verliefd"></a>
+            <footer>
+                <ul>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                </ul>
+                <button><img src="./img/like.svg" alt="like">Like</button>
+                <button><img src="./img/download-symbol-purple.svg" alt="download">Download</button>
+            </footer>
+        </article>
+
+        <article>
+<!--            <h2>Western</h2>-->
+
+            <button class="favorieten"> <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+
+
+            <a href="#"><img class="thumbnail" src="/img/thumbnail-western.jpg" alt="western"></a>
+            <footer>
+                <ul>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                    <li><img src="img/star.svg" alt="sterretje"></li>
+                </ul>
+                <button><img src="./img/like.svg" alt="like">Like</button>
+                <button><img src="./img/download-symbol-purple.svg" alt="download">Download</button>
+            </footer>
+        </article>
 
     </main>
+
+
+
+
 
 
 

@@ -78,6 +78,7 @@ form {
     border: 1em;
     background-color: #FAFAFA;
     margin: 0.9em;
+
 }
 
 legend {
@@ -120,51 +121,68 @@ select {
     max-width: 50rem;
 }
 
-/*article {
 
-    display: inline-block;
-    padding: 1em;
-    background: #ffffff;
-
-    }*/
 
 article {
+    margin: 0.9em;
     display: inline-block;
-    width: 15.5rem;
-    margin-left: 1em;
-
+    background: #F2F1F3;
 }
 
 
 
 
+
+/*
 .eye {
     display: inline-block;
     max-width: 2em;
     max-height: 2em;
     margin-right: 0.6em;
 }
+*/
 
 .favorieten {
+    /*hartje waar je op moet klikken voor favoriten*/
 
+    display: inline-block;
+    border: none;
     position: absolute;
+    background-color: transparent;
+    color: purple;
+    font-size: 30px;
+    margin-left: 8.1em;
+    margin-top: 0.1em;
+}
+
+/*
+.favorieten:hover {
+    color: red;
+
+}
+*/
+
+.thumbnail {
+    display: flex;
+
+}
+
+
+article footer li {
+    display: inline-block;
+    width: 1.3em;
+}
+
+footer button {
     display: inline-block;
     padding: 0em 2em 0em 2em;
     border: none;
-    background-color: purple;
-    color: white;
-    font-size: 16px;
-
+    background-color: #F2F1F3;
+    color: black;
+    width: 7em;
 }
 
-.thumbnail {
-display: inline-block;
-    max-height: 23em;
-    max-width: 23em
-}
+footer button a:hover{
+    color: green;
 
-footer {
-    display:  flex;
-    max-height: 30px;
-    max-width: 30px
 }
