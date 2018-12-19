@@ -7,11 +7,27 @@
 #F2F1F3 = lichter,lichter-grijs
 #808080 = donkergrijs
 
-#2b3940 = zwart/groenig
+/*Deze kleur voor tekst*/
+/*#2b3940 = zwart/groenig
+
+/*Deze kleur voor de borders*/
+/*#A6C4C4 = blauw/groenige kleur
 */
 
 
+
+/*REMINDER VOOR MEZELF:
+margin = buitenkant van de content.
+padding = ruimte om de content heen.*/
+
+
+@font-face {
+    src: url("../fonts/MuseoSans_500.otf");
+    font-family: "MuseoSans Regular";
+}
+
 * {
+
     font-family: museo-sans, sans-serif;
 }
 
@@ -20,169 +36,266 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 5.4em;
-    margin-bottom: 20px;
-    margin: 0.2em;
-}
-
+/*=========================================================================*/
+/*                             HEADER-STYLING:                             */
+/*=========================================================================*/
 li {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-
+    display: inline-block;
 }
 
-ul {
-    list-style-type: none;
 
+header {
 
-
-
+    background-color: white;
+    height: 3em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #A6C4C4;
 }
 
+/*Afbeeldingen in de header*/
 header a img {
-    width: 3rem;
+    width: 2em;
     cursor: pointer;
+    border: 1px solid #A2388D;
+    padding: 0.3em;
+    border-radius: 6px;
 }
 
 
-hr {
-    border: 0.02em solid #A6C4C4;
-    width: 96%;
-    margin-top: 1.3em;
+
+
+ul.navigatie {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
 }
 
 
-.begin {
-    display: block;
+/*=========================================================================*/
+/*                         INTRODUCTIE-STYLING:                            */
+/*                   99 VERHALEN OM TE LEZEN VOOR OP REIS                  */
+/*=========================================================================*/
+
+
+section#introductie {
+    display: flex;
     background-color: #A2388D;
+    /*
+    background: url(../img/wowaircabin.jpg);
+    background: linear-gradient(blue, pink);
+*/
+    /*achtergrond ideen*/
 
+    background: linear-gradient(to bottom, transparent, #A2388D),
+        url(../img/purplecabinewow.jpg);
     color: white;
     display: flex;
     justify-content: space-around;
     padding: 80px;
-    margin: 0.9em;
-    /*
-    height: 200px;
-    padding: 0em 3em 0em 3em;
+    margin: 1em;
+
+
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+
+/*=========================================================================*/
+/*                     STYLING VAN HET SORTEER FORM:                      */
+/*=========================================================================*/
+
+/*
+fieldset {
+    border: none;
+    margin-bottom: 1em;
+    background-color: #A2388D;
+}
 */
+
+/* styling van het formulier */
+/* form {
+    position: static;
+    background-color: #A2388D;
+    margin: 1em;
+    position: relative;
 }
 
-form {
-    border: 1em;
-    background-color: #FAFAFA;
-    margin: 0.9em;
-
-}
-
+styling van de "sorteer" tekst
 legend {
-    display: inline-block;
-    font-size: 1.6em;
-    font-weight: 500;
+    font-size: 16px;
     color: #ffffff;
-    padding: 0.4em;
-    background-color: #99258E;
+    padding-top: 1em;
 }
 
+icoon van sorteer
 legend img {
-    width: 0.9em;
-    margin-left: 0.1em;
+    width: 30px;
+    height: 30px;
     margin-right: 0.4em;
 }
-
-form button {
-    display: inline-block;
-    margin-left: 1.2em;
-    height: 3em;
-    width: 4.5em;
-    border: none;
-    background: #F2F1F3;
-}
-
 
 select {
     display: inline-block;
     border: none;
-    margin: 0.3rem 0rem 0.3rem 0rem;
-    height: 2em;
-    border: 0.1rem solid #EEEEEE;
+    margin-left: 1em;
+    border: 1px solid #EEEEEE;
     background-color: white;
     color: #2b3940;
-    font-size: 1rem;
-    font-weight: 400;
-    border-radius: 300em;
-    padding-left: 3rem;
-    max-width: 50rem;
+    font-size: 1em;
 }
 
-
-
-article {
-    margin: 0.9em;
-    display: inline-block;
+form button {
+    font-size: 1em;
+    width: 3em;
+    border: none;
     background: #F2F1F3;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
 }
 
+ */
 
 
-
-
-/*
-.eye {
-    display: inline-block;
-    max-width: 2em;
-    max-height: 2em;
-    margin-right: 0.6em;
-}
-*/
-
-.favorieten {
-    /*hartje waar je op moet klikken voor favoriten*/
-
-    display: inline-block;
+fieldset {
     border: none;
-    position: absolute;
-    background-color: transparent;
+    background-color: #A2388D;
+}
+
+form {
+    background-color: #FAFAFA;
+    border: 3px solid #EEEEEE;
+    margin: 1em;
+}
+
+/*styling van de "sorteer" tekst*/
+legend {
+    font-size: 1.6em;
+    text-decoration: uppercase;
+    color: white;
+    padding-top: 2em;
+
+}
+
+
+legend img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.4em;
+}
+
+select {
+    margin: 0.5rem 6%;
+    width: 88%;
+    height: 3em;
+    border: 0.2rem solid #EEEEEE;
+    background-color: white;
+    color: #445757;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    padding-left: 1rem;
+}
+
+.go {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-size: bold;
+    background-color: #808080;
+    color: white;
+    border-radius: 0.3rem;
+    margin-left: 1em;
+    padding: 0.6rem 0.9rem;
+}
+
+
+/*=========================================================================*/
+/*                     SECTION - POPULAIRE VERHALEN                        */
+/*=========================================================================*/
+
+
+/*Titel: Populaire verhalen*/
+h2 {
+    margin-left: 1em;
+    font-family: museo-sans, sans-serif;
+    color: #808080;
+
+}
+
+
+
+/*Het content-blokje / article*/
+article {
+    display: inline-block;
+    font-family: museo-sans, sans-serif;
+    background: white;
+    border: 1px solid #A6C4C4;
+    background-color: #fff;
+    padding-bottom: 1em;
+    margin: 1em 1em 0em 0em;
+    margin-left: 1em;
+
+
+}
+
+/*Afbeelding van het article*/
+article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Titel van het verhaal*/
+h3 {
+    margin-left: 1em;
+}
+
+/*tekst van het verhaal*/
+article p {
+    margin: 1em;
+    color: #2b3940;
+}
+
+/*rating van het verhaal (sterretjes)*/
+article li {
+    display: inline-block;
+    color: rgba(239, 192, 48, 1);
+}
+
+/* positie v/d sterretjes*/
+article footer ul {
+    position: static;
+    padding-left: 1em;
+}
+
+/*Likw & Download button styling*/
+article footer button {
+    margin-left: 1em;
+    border: 1px solid purple;
+    font-size: 16px;
     color: purple;
-    font-size: 30px;
-    margin-left: 8.1em;
-    margin-top: 0.1em;
 }
 
-/*
-.favorieten:hover {
-    color: red;
 
+article footer button:hover {
+    background-color: purple;
+    color: white;
 }
-*/
 
-.thumbnail {
+.btn-meer-verhalen {
     display: flex;
+    border: 1px solid white;
+    background-color: purple;
 
+    font-size: 16px;
+    color: white;
+    padding: 1em;
+    margin-top: 1em;
 }
 
-
-article footer li {
-    display: inline-block;
-    width: 1.3em;
-}
-
-footer button {
-    display: inline-block;
-    padding: 0em 2em 0em 2em;
-    border: none;
-    background-color: #F2F1F3;
+.btn-meer-verhalen:hover {
+    background-color: #FFDF5D;
     color: black;
-    width: 7em;
-}
-
-footer button a:hover{
-    color: green;
-
-}
