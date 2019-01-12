@@ -74,8 +74,8 @@ div {
     position: fixed;
     background-color: #ffff;
     width: 100%;
-/*        height: 5.9375em;*/
-    height: 5em;
+    height: 5.9375em;
+    /*    height: 5em;*/
     z-index: 1;
 }
 
@@ -129,15 +129,10 @@ nav li img {
 /*=========================================================================*/
 
 section#introductie {
-    /*
+
     background: linear-gradient(to bottom, transparent, #A2388D),
         url(../img/purplecabinewow.jpg);
-*/
-    background:
-        url(../img/butterly.jpg);
     background-repeat: no-repeat;
-
-
     display: flex;
     justify-content: space-around;
     margin: 1em;
@@ -155,13 +150,13 @@ section h1 {
 /*=========================================================================*/
 
 h2 {
-/*    position: relative;*/
+    /*    position: relative;*/
     color: #2b4040;
     font-size: 1.5em;
     font-weight: 700;
     font-style: normal;
     padding-left: 1rem;
-/*    margin-top: -0.1em;*/
+/*        margin-top: -0.1em;*/
     margin-bottom: -0.2em;
 
 }
@@ -173,25 +168,19 @@ h2 {
 
 main section {
     display: flex;
-    /*    justify-content: space-around;*/
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 }
 
-
-
-article header{
+article header {
     height: 10em;
 }
 
-
-
 article {
     border: solid #A6C4C4 1px;
-    margin: 0.5em 1em 0em 0.5em;
-        margin: 1em;
-
+    margin: 1rem 0.9rem 0rem 0.9rem;
+    /*margin: 1em;*/
     position: relative;
     max-width: 25em;
 }
@@ -203,8 +192,6 @@ article img {
     width: 100%;
 }
 
-
-
 /*Lang paars blokje voor de afbeelding die in het article staat*/
 span.leestijd {
     font-size: 0.8em;
@@ -213,7 +200,7 @@ span.leestijd {
     position: absolute;
     top: 11.33em;
     margin-left: 1rem;
-/*    padding: .1em 1em .1em 1em;*/
+    /*    padding: .1em 1em .1em 1em;*/
     padding: 0em 0.25em;
     text-transform: uppercase;
     color: #fff;
@@ -221,10 +208,9 @@ span.leestijd {
 }
 
 
-
 article div {
     position: static;
-        z-index: 1;
+    z-index: 1;
 
     margin-bottom: -6.6em;
 
@@ -233,7 +219,7 @@ article div {
 
 
 /*Titel van het verhaal in het article*/
- div h4 {
+div h4 {
     color: #2b4040;
     font-family: museo-sans, sans-serif;
     font-size: 2em;
@@ -241,9 +227,8 @@ article div {
     font-weight: 100;
     margin: 0.8em 0em 0.98em 0em;
     padding-left: 1rem;
-/*        background-color: white;*/
+    /*        background-color: white;*/
 }
-
 
 /*Styling van de paarse ster*/
 span.waardering {
@@ -273,28 +258,27 @@ footer p {
     font-style: normal;
     padding: 1em 1em 1em 0rem;
     margin: 3.5em 1em 0.6em 1em
-
-
 }
 
 /*Footer in de article*/
 footer {
-/*        margin-top: 1em;*/
+    /*        margin-top: 1em;*/
     margin-bottom: 0.7em;
 }
 
 
 /*Buttons in de footer van de article*/
-article footer button {
+article footer button { /*AANPASSEN*/
     height: 2.5em;
     margin-left: 1rem;
     font-size: 1em;
     font-weight: 700;
     font-style: normal;
-    /*    margin: 1rem 0rem 0rem 1rem;*/
-    /*    padding: 0.5em;*/
+/*        margin: 1rem 0rem 0rem 1rem;*/
+/*        padding: 0.5em;*/
     text-transform: uppercase;
-    background-color: #99258d;
+/*    background-color: #99258d;*/
+    background-color: green;
     border: 1px solid #99258d;
     border-radius: 0.1875em;
 
@@ -332,24 +316,24 @@ article footer button:hover {
 */
 
 
-.btn-download2{
+.btn-download2 {
     text-decoration: none;
     color: #fff;
 }
 
 
- .btn-lees-meer{
-     text-decoration: none;
+.btn-lees-meer {
+    text-decoration: none;
     font-size: 1em;
     font-weight: 700;
     font-style: normal;
-        margin: 1em 0em 0rem 8em;
-        padding: 0.2em;
+    margin: 1em 0em 0rem 8em;
+    padding: 0.2em;
     text-transform: uppercase;
     background-color: rgb(109, 109, 109);
     border: 1px solid rgb(109, 109, 109);
     border-radius: 0.1875em;
-     color: white;
+    color: white;
 }
 
 /*Download button (Wanneer de gebruiker erover gaat met z'n muis/vinger?)*/
@@ -504,7 +488,7 @@ body#account {
 body#account header {
     width: 100vw;
     background-color: white;
-    background: url(../images/transaviacabine.jpg) no-repeat;
+    background: url(../img/cabine.jpg) no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -520,7 +504,6 @@ body#account form {
 
 body#account form legend {
     /*AFMAKEN*/
-/*        color: palegreen;*/
     font-family: museo-sans, sans-serif;
     font-size: 2em;
     font-weight: 700;
@@ -631,12 +614,12 @@ body#account input[type=submit] {
     font-weight: 700;
     margin-top: 2em;
     align-items: center;
-/*    width: 10em;*/
-/    border: none;
+    /*    width: 10em;*/
+    / border: none;
     padding: 1em 2em;
     text-decoration: none;
     text-align: center;
-/*
+    /*
     -moz-transition: background-color 0.25s ease-out;
     -o-transition: background-color 0.25s ease-out;
     transition: background-color 0.25s ease-out;
@@ -658,7 +641,8 @@ body#account p:nth-of-type(2) {
 }
 
 body#account p:nth-of-type(2) > a {
-    color: gold;/*veranderen*/
+    color: gold;
+    /*veranderen*/
 }
 
 body#account p:nth-of-type(2) > a:hover {
@@ -669,7 +653,8 @@ body#account p:nth-of-type(2) > a:hover {
 body#account footer {
     bottom: 0;
     width: 100%;
-text-align: center;}
+    text-align: center;
+}
 
 
 /*=========================================================================*/
@@ -794,7 +779,6 @@ section#story {
     justify-content: space-around;
     padding: 1rem;
     margin-top: 6em;
-    padding-left: 4em;
 }
 
 
@@ -823,27 +807,27 @@ section#ding h1 {
 /*                                 MEDIA QUERIES                           */
 /*=========================================================================*/
 
-/*Tablet formaat 50em*/
-/*@media screen and (min-width: 50em){}*/
-
-/* Desktop formaat 80em*/
-/*@media(min-width: 80em) {}*/
+/*MEDIA QUERIE FORMATEN - DESKTOP & TABLET*/
+/*Tablet formaat 50em
+@media screen and (min-width: 50em){}
+Desktop formaat 80em*
+@media(min-width: 80em) {}*/
 
 
 /*RESPONSIVE VOOR TABLET*/
 @media screen and (min-width: 50em) {
 
-    /*
-    body {
+/*body*/
+/*body {
         display: flex;
         flex-wrap: wrap;
     }
 */
-    section h1 {
+section h1 {
         color: chartreuse;
     }
-
-    /* section article{
+/*section article*/
+/* section article{
 width: 30%;
 display: flex;
 flex-wrap: wrap;
@@ -854,58 +838,33 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
     align-items: baseline; */
-
-
-    body#account label {
-    text-align: center;
+body#account label {
+        text-align: center;
+    }
 }
-
-
-
-}
-
 /*Einde van de media querie van de tablet*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*RESPONSIVE VOOR DESKTOP*/
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 60em) {
     section h1 {
         color: orange;
     }
-
-
-
-    section article{
-    width: 30%;
-    min-height: 250px;
-    float: left;
-    border: 1px solid #a6c4c4;
-    overflow: hidden;
-    padding-bottom: 6px;
-    margin-top: 20px;
+    section article {
+        width: 30%;
+        min-height: 250px;
+        float: left;
+        padding-bottom: 6px;
+    }
 }
+/*Einde van de media querie van de desktop*/
 
 
 
-
-
-
+/*=========================================================================*/
+/*                              MICRO INTERACTIE                           */
+/*=========================================================================*/
 
 
 
