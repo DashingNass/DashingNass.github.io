@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
-    <title>Verhalen website</title>
+    <title>Account maken</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/png" href="img/wowairfavicon.png" sizes="16x16">
     <!--fav icon-->
@@ -12,10 +12,10 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/mdp7gsi.css">
     <!--Adobe typekit voor de Museo Sans Fonts-->
-
-
-
 </head>
+
+
+
 
 <body id="account" action="#">
     <div>
@@ -32,21 +32,28 @@
 
     <form action="account_ingelogd.html" method="get">
         <fieldset>
-            <legend>Inloggen</legend>
+            <legend>Account aanmaken</legend>
 
             <label for="input-name">Voornaam</label>
-            <input id="name" type="text" placeholder="Voornaam" required>
+            <input id="name" type="text" placeholder="Jacob" required>
 
+            <label for="input-surname">Achternaam</label>
+            <input id="surname" type="text" placeholder="Rabbit" required>
+
+
+           <label for="input-email">E-mail</label>
+            <input id="email" type="email" placeholder="gebruiker@mail.nl" required>
 
     <label for="psw"><b>Wachtwoord</b></label>
     <input type="password" placeholder="Vul wachtwoord in" name="psw" required>
 
 
-            <input type="submit" value="inloggen">
+            <input type="submit" value="Registreer">
 
             <p class="feedback">Het formulier is goed ingevuld!</p>
 
-            <p>Nog geen WOW air account?<a href="account-maken.html"> Klik hier!</a></p>
+            <p>Ik heb een acccount en wil inloggen.
+            <a href="account.html"> Klik hier!</a></p>
 
          </fieldset>
     </form>
@@ -54,6 +61,3 @@
 
 
     <script src="/javascript/javaa.js"></script>
-</body>
-
-</html>
