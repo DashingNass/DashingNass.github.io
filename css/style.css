@@ -31,7 +31,7 @@ font-weight: 900;
 font-style: normal;
 
 
-–h1 titel van mijn VORMGEVING verhaal–
+Titel van mijn VORMGEVING verhaal
 Pacifico
 font-family: 'Pacifico', cursive;
 font-weight: 200;
@@ -75,82 +75,113 @@ body {
     padding: 0;
 }
 
-h1 {
-    color: #2b4040;
-    font-size: 2em;
-    font-weight: 700;
-    font-style: normal;
-    padding-left: 1rem;
-}
-
 h2 {
-/*    position: relative;*/
+/*        position: relative;*/
     color: #2b4040;
     font-size: 1.5em;
     font-weight: 700;
     font-style: normal;
     padding-left: 1rem;
-    /*margin-top: -0.1em;*/
-    margin-bottom: -0.2em;
-
 }
 
 
 /*=========================================================================*/
 /*                               HEADER STYLING:                           */
 /*=========================================================================*/
-div {
-    position: fixed;
-    background-color: #ffff;
-    width: 100%;
-    height: 5.9375em;
-    /*    height: 5em;*/
-    z-index: 1;
-}
 
-.header {
-    position: absolute;
+body > header {
+    background-color: #fff;
     padding-bottom: 1em;
-    z-index: 1;
-    width: 100%;
-    height: 3.4em;
-    background-color: #ffff;
-    border-bottom: solid 1px #a6c4c4;
-    padding-bottom: 1em;
+    margin-left: 1.5rem;
+    margin-right: 1em;
+    margin-top: 1em;
+/*display: flex;*/
 }
 
-.logo {
-    cursor: pointer;
+body header ul{
+    margin: 0;
+    padding: 0;
     display: flex;
-    height: 4em;
-    justify-content: space-around;
+    justify-content: space-between;
+        border-bottom: 1px solid #88AFAF;
+/*    height: 3.3em;*/
+    height: 3.5em;
+
 
 }
 
-nav {
-    margin: 1em;
-    position: static;
+body header ul {
+/*    height: 3.5em;*/
+    padding-top: 0.6em;
 
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
+li {
     list-style: none;
-    padding-left: 0;
+
 }
 
-nav li img {
-    height: 2em;
+/*Ster icoon, favorieten in de header*/
+body > header li:first-of-type button {
+    background-color: transparent;
+    border: 0;
+    width: 2.5em;
+    padding-left: 0em;
+}
+
+/*Ster icoon, favorieten*/
+body > header nav ul li:first-of-type button {
+    background-image: url(../img/ster-paars.svg);
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 3em;
+    padding-top: 3em;
+    font-size: 0.80;
+    color: purple;
+    width: 4em;
+    background-position: top;
 }
 
 
-/*================================================== =======================*/
-/*                          OVERZICHTSPAGINA:                               */
-/*         INTRODUCTIE-STYLING – 99 VERHALEN OM TE LEZEN VOOR OP REIS       */
+
+/*Inloggen-knop met user icon*/
+body > header nav ul li:last-of-type button{
+   background-image: url(../img/profile.svg);
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 3em;
+    padding-top: 3em;
+    font-size: 0.80;
+    color: purple;
+    background-position: top;
+    cursor: pointer;
+}
+
+
+
+li:last-of-type button a{
+    text-decoration: none;
+    color: purple;
+}
+
+body header > li a{
+    text-decoration: none;
+}
+
+/*WOW air Logo*/
+li img{
+    width: 4em;
+    margin-left: 0.9rem;
+}
+
+
+/*================================================== ======================*/
+/*                          OVERZICHTSPAGINA:                              */
+/*         INTRODUCTIE-STYLING – 99 VERHALEN OM TE LEZEN VOOR OP REIS      */
 /*=========================================================================*/
 
-/*AANPASSEN: ACHTERGROND*/
 section#introductie {
     background: linear-gradient(to bottom, transparent, #A2388D),
         url(../img/purplecabinewow.jpg);
@@ -158,9 +189,10 @@ section#introductie {
     display: flex;
     justify-content: space-around;
     margin: 1em;
-    margin-top: 6em;
+/*    margin-top: 6em;*/
+    margin-top: 2em;
     padding: 5em;
-}
+    }
 
 section h1 {
     color: #fff;
@@ -173,22 +205,47 @@ section h1 {
 /*                     STYLING VAN DE VERHALEN                             */
 /*=========================================================================*/
 
-main section {
+main{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+main > article{
+    display: block;
+}
+
+main >h2{
+    flex-basis: 100%;
+}
+
+main > section {
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+
+
+article div {
+    position: fixed;
+    background-color: #ffff;
+    width: 100%;
+    height: 5.5em;
+    z-index: 1;
 }
 
 article header {
     height: 10em;
 }
 
-section article {
+main article {
     border: solid #A6C4C4 1px;
-    margin: 1rem 0.9rem 0rem 0.9rem;
-    /*margin: 1em;*/
+/*    margin: 1.5em 0.5em 1.5em 0.5em;*/
+/*    margin: 0.5rem;*/
+    margin: 1em 0.5em 0.5em 0.5em;
     position: relative;
-    max-width: 25em;
+    width: 25em;
 }
 
 /*Thumbnail/Afbeelding van het article*/
@@ -198,25 +255,24 @@ article img {
     width: 100%;
 }
 
-/*Lang paars blokje voor de afbeelding die in het article staat*/
-span.leestijd {
+/*Het paarse blokje die voor de thumbnail staat*/
+article span {
     font-size: 0.8em;
     font-style: normal;
     font-weight: 100;
     position: absolute;
     top: 11.33em;
     margin-left: 1rem;
-    /*        padding: .1em 1em .1em 1em;*/
     padding: 0em 0.25em;
     text-transform: uppercase;
     color: #fff;
-    background: #99258d;
+    background-color: #99258d;
 }
 
 article div {
     position: static;
     z-index: 1;
-    margin-bottom: -6.6em;
+    margin-bottom: -6em;
 }
 
 /*Titel van het verhaal in het article*/
@@ -226,35 +282,35 @@ div h4 {
     font-size: 2em;
     font-style: normal;
     font-weight: 100;
-    margin: 0.7em 0em 0.98em 0em;
+    margin: 0.7em 0em 1em 0em;
     padding-left: 1rem;
-    /*background-color: white;*/
 }
 
-
 /*Styling van de paarse ster*/
-span.waardering {
-    color: #99258d;
+div span {
     font-size: 1em;
     font-family: museo-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
-    width: 60px;
-    margin: -5em 9em 1em 18em;
+    width: 4em;
+    margin: 0.1em 8em 1em 19em;
     padding-bottom: 0.2em;
     border-bottom: 5px solid #FFDF5D;
     position: absolute;
+    background-color:rgba(0, 0, 0, 0);
+    color: #800080;
 }
 
 /*Paarse ster afbeelding*/
-.waardering img {
+div img {
     height: 2em;
     width: 2em;
 }
 
+
 /*Stukje tekst van het verhaal*/
 footer p {
-    color: 2b4040;
+    color: #2b4040;
     font-size: 1em;
     font-weight: 200;
     font-style: normal;
@@ -264,10 +320,9 @@ footer p {
 
 /*Footer in de article*/
 footer {
-    /*margin-top: 1em;*/
+/*    margin-top: 1em;*/
     margin-bottom: 0.7em;
 }
-
 
 /*Buttons in de footer van de article*/
 article footer button {
@@ -276,58 +331,46 @@ article footer button {
     font-size: 1em;
     font-weight: 700;
     font-style: normal;
-    /*margin: 1rem 0rem 0rem 1rem;*/
+/*        margin: 1rem 0rem 0rem 1rem;*/
     padding: 0.5em;
+    margin-bottom: 0.6em;
     text-transform: uppercase;
     background-color: #99258d;
     border: 1px solid #99258d;
     border-radius: 0.1875em;
 }
 
-
-.btn-download1 {
-    text-decoration: none;
-    color: #fff;
-}
-
-.btn-lees-meer {
+article footer a {
     text-decoration: none;
     font-size: 1em;
     font-weight: 700;
     font-style: normal;
-    margin: 1em 0em 0rem 8em;
+    margin: 4em 0em 0rem 9em;
     padding: 0.2em;
     text-transform: uppercase;
-    background-color: rgb(109, 109, 109);
-    border: 1px solid rgb(109, 109, 109);
+    background-color: #808080;
+    border: 1px solid #808080;
     border-radius: 0.1875em;
     color: #fff;
 }
 
-/*Download button (Wanneer de gebruiker erover gaat met z'n muis/vinger?)*/
-.btn-lees-meer:hover {
-    background: rgba(239, 192, 48, 1);
-    border-radius: 3px solid;
-    border-color: rgba(239, 192, 48, 1);
+
+/*Lees meer button (Wanneer de gebruiker erover gaat met z'n muis/vinger?)*/
+article footer a:hover {
+    background-color: #FFDF5D;
+    border: 1px solid #FFDF5D;
+        border-radius: 0.1875em;
+
 }
 
 
 
-
-
-
-
-
-
-
-
-
 /*=========================================================================*/
-/*                     STYLING VAN DE FORMULIEREN:                  */
+/*                     STYLING VAN DE FORMULIEREN:                         */
 /*=========================================================================*/
 
 fieldset {
-    margin-top: 5em;
+    margin-top: 2em;
     padding-top: 1em;
     border: none;
 }
@@ -345,13 +388,13 @@ legend img {
     width: 1.25em;
     height: 1.25em;
     padding-right: 1em;
+    padding-top: 0.6em;
 }
 
 legend {
     font-weight: 500;
     font-size: 1em;
     color: color: #2b4040;
-    ;
     padding-top: 1rem;
     text-decoration: uppercase;
 }
@@ -369,9 +412,8 @@ select {
 }
 
 select:hover {
-    border: 1px solid purple;
+    border: 1px solid #800080;
 }
-
 
 
 input[type=submit] {
@@ -393,17 +435,16 @@ input[type=submit] {
 /*                    FOOTER STYLING VAN DE INDEX PAGINA:                  */
 /*=========================================================================*/
 
-
-
-.btn-meer-verhalen {
+/*Footer styling (De grote gele knop, onderaan de pagina)*/
+main > footer {
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-basis: 100%;
 }
 
-
-.btn-meer-verhalen a {
-    color: black;
+main > footer a {
+    color: #000000;
     background-color: #FFDF5D;
     Font-size: 1em;
     padding: 1em 2em;
@@ -413,14 +454,15 @@ input[type=submit] {
     text-transform: uppercase;
 }
 
+main > footer a:hover {
+    background-color: #FFFF00;
+    color: #000000;
 
-
-
-
+}
 
 
 /*=========================================================================*/
-/*                          INLOGGEN - ACCOUNT                            */
+/*                          INLOGGEN - ACCOUNT                             */
 /*=========================================================================*/
 
 
@@ -428,20 +470,7 @@ body#account {
     margin: 0;
     padding: 0;
     background-color: #fff;
-
 }
-
-/*
-
-body#account header {
-    background-color: white;
-    background: url(../img/purplecabinewow.jpg) no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 15em;
-}
-*/
 
 body#account form {
     margin-bottom: 2em;
@@ -457,16 +486,31 @@ body#account form legend {
     color: #A2388D;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 1.5em;
 }
 
 body#account fieldset label {
     display: block;
     font-family: museo-sans, sans-serif;
-     font-weight: 700;
+    font-weight: 700;
     margin-top: 1rem;
     padding: 0.6em;
-/*    padding-left: 1.3em;*/
+    padding-left: 1.3em;
+}
+
+body#account input[type=text]:valid:focus {
+    background-color: #98fb98;
+}
+
+body#account input[type=text]:invalid:focus {
+    background-color: #FF0000;
+}
+
+body#account input[type=email]:valid:focus {
+    background-color: #98fb98;
+}
+
+body#account input[type=email]:invalid:focus {
+    background-color: #FF0000;
 }
 
 body#account input {
@@ -481,12 +525,6 @@ body#account input {
 body#account input:hover {
     border: 2px solid purple;
 }
-
-
-
-
-
-
 
 /*Melding als het formulier correct is ingevuld*/
 body#account fieldset:valid p:nth-of-type(1) {
@@ -505,39 +543,27 @@ body#account fieldset:invalid p:nth-of-type(1) {
     display: none;
 }
 
-
-
-
-
 /*Inloggen knop*/
 body#account input[type=submit] {
-    color: white;
+    color: #fff;
     background-color: #A2388D;
-
     margin-top: 2em;
-     border: none;
+    border: none;
     padding: 1em 2em;
     text-decoration: none;
-
-
 }
-
-
 
 body#account p:nth-of-type(2) {
     margin-top: 2em;
     text-align: center;
 }
 
-
 /*Klik hier tekst*/
 body#account p:nth-of-type(2) a {
     display: block;
-    color: red;
+    color: #FF0000;
     text-decoration: none;
 }
-
-
 
 
 /*=========================================================================*/
@@ -569,7 +595,6 @@ form#formulier fieldset label:hover {
     color: purple;
     background-color: #EFC030;
     opacity: 0.8;
-
 }
 
 form#formulier input[type=radio] + label {
@@ -586,8 +611,7 @@ form#formulier input[type=radio]:checked + label {
     background-color: #EFC030;
 }
 
-form#formulier .genre,
-.taalgebruik {
+form fieldset legend:nth-of-type(2), legend:nth-of-type(3) {
     margin-bottom: 1em;
 }
 
@@ -597,78 +621,41 @@ form#formulier .genre,
 /*=========================================================================*/
 
 
-#verhaal-droom {
+#verhaal-droom section h1{
+    color: #000000;
+    font-family: museo-sans, sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    margin-bottom: -0.2em;
+}
+
+
+#verhaal-droom > section{
+    margin-left: 1.5rem;
+/*    background-color: white;*/
+}
+
+section ul{
+/*    margin-left: -2em;*/
+    display: flex;
+    margin-left: -2.5em;
+}
+
+section nav li img{
+       height: 2em;
+        width: 2em;
+        margin-left: 0em;
+
+
+
+}
+
+#verhaal-droom main{
     background-color: #308ac4;
 }
 
-
-/*De section.intro dient als header*/
-section.intro {
-    background-color: #fff;
-    color: #2b3940;
-    display: inline-block;
-    justify-content: center;
-    padding-top: 6em;
-}
-
-
-/*titel van het verhaal*/
-section.intro h1 {
-    color: #2b3940;
-    font-family: museo-sans, sans-serif;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 500;
-    margin: 0.1em 0em -0.7em 0em;
-    padding-left: 1rem;
-    border: none;
-}
-
-/*footer*/
-section.intro footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 1em;
-    margin-top: -1.5em;
-}
-
-section.intro nav{
-    display: flex;
-}
-
-section.intro ul{
-    margin-left: -1em;
-}
-
-/*download-knop*/
-section .download-knop {
-    height: 2.5em;
-    font-size: 1em;
-    font-weight: 700;
-    font-style: normal;
-    padding: 0.5em;
-    text-transform: uppercase;
-    background-color: #99258d;
-    border: 1px solid #99258d;
-    border-radius: 0.1875em;
-    color: #fff;
-}
-
-/*Grijze opslaan knop*/
-#opslaan {
-    height: 2.5em;
-    font-size: 1em;
-    font-weight: 700;
-    font-style: normal;
-    padding: 0.5em;
-    text-transform: uppercase;
-    background-color: lightgray;
-    border-radius: 0.1875em;
-}
-
-
 /*Grote titel van het verhaal*/
-main h1 {
+#verhaal-droom main > h1 {
     display: flex;
     color: rgb(54 169 225);
     font-family: 'Pacifico', cursive;
@@ -677,36 +664,15 @@ main h1 {
     font-size: 6em;
     margin-bottom: -0.1em;
     margin-top: 0.2em;
+    margin-left: -7rem;
     -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: #fff;
 }
 
 
 /*Letters van het woord*/
-.letterD {
-    transform: rotate(13deg);
-    left: 156px;
-    top: 34px;
-    width: 60px;
-    height: 92px;
-}
-.letterR {
-    left: 230px;
-    top: 85px;
-    width: 40px;
-    height: 50px;
-}
-.letterO1 {
-    transform: rotate(-9deg);
-    left: 270px;
-    top: 75px;
-    width: 36px;
-}
-.letterO2 {
-    transform: rotate(20deg);
-    width: 40px;
-}
-.letterM {
+/*Letter D*/
+#verhaal-droom h1 span:nth-last-of-type(5){
     transform: rotate(6deg);
     left: 343px;
     top: 67px;
@@ -714,8 +680,40 @@ main h1 {
     height: 61px;
 }
 
+/*Letter R*/
+#verhaal-droom h1 span:nth-last-of-type(4){
+    transform: rotate(20deg);
+    width: 40px;
+}
+
+/*Letter O*/
+#verhaal-droom h1 span:nth-last-of-type(3){
+     transform: rotate(-9deg);
+    left: 270px;
+    top: 75px;
+    width: 36px;
+}
+
+/*Letter O*/
+#verhaal-droom h1 span:nth-last-of-type(2){
+      left: 230px;
+    top: 85px;
+    width: 40px;
+    height: 50px;
+}
+
+/*Letter M*/
+#verhaal-droom h1 span:nth-last-of-type(1){
+      transform: rotate(13deg);
+    left: 156px;
+    top: 34px;
+    width: 60px;
+    height: 92px;
+}
+
+
 /*verhaal, zinnen*/
-main span p {
+section span p {
     margin: 1rem;
     font-size: 1.2em;
     color: #fff;
@@ -726,123 +724,180 @@ span p strong {
     color: rgb(41, 35, 92);
 }
 
-
-/*Rotatie van de tekst - nog niet verwijderen, misschien kan of doe ik hier nog iets mee*/
-/*
-span p:nth-of-type(1)  {
-  transform: rotate(-5deg);
-}
-
-span p:nth-of-type(2)  {
-  transform: rotate(10deg);
-}
-*/
-
-
-/************************/
-/*        TEXT-FADING      */
-/************************/
-
-
-p {
+span > p {
     margin: 1rem;
+
 }
 
-strong{
-font-family: 'Vibur', cursive;
+p > strong {
+    font-family: 'Vibur', cursive;
     font-size: 1.4em;
 }
 
 
-
-
-
-
-
-
 /*=========================================================================*/
-/*                    MICRO INTERACTIE 1 – VERHAAL OPSLAAN                 */
+/*                    MICRO INTERACTIE 1 – DOWNLOAD                        */
 /*=========================================================================*/
 
-/*Transparante achtergrond van het content blokje*/
-.pop-up {
+nav{
+    position: relative;
+}
+
+/*Dit is de melding die bovenaan in de header komt te staan*/
+nav section{
+    position: absolute;
+    right: 2px;
+    top: -3px;
+    background-color: rgb(220,20,60);
+;
+/*    border-radius: 5em;*/
     display: none;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 30px;
+  width: 30px;
+  border-radius: 50%;
+    transition: .6s ease-in;
+
 }
 
-
-/* Achtergrond van het content content blokje zelf */
-.modal-content {
-    background-color: #fff;
-    margin-top: 12em;
-    padding-bottom: 9em;
-    padding: 50px;
-    border: 6px solid purple;
-    width: 80%;
-}
-
-/* Sluit-knop positionering */
-.close {
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* Paarse sluit-knop */
-.modal-content button {
+nav section p{
     padding: 1em;
-    margin-top: 2em;
+    margin-top: -0.6em;
+    margin-left: -0.3em;
+    color: #fff;
+
+}
+
+nav section.show{
+    display: block;
+}
+
+
+/* Paarse download button*/
+footer button:nth-of-type(1){
+        height: 2.5em;
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background-color: #99258d;
+    border: 1px solid #99258d;
+    border-radius: 0.1875em;
+    color: #fff;
+
+
+}
+
+footer button:nth-of-type(1):hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(89, 0, 74);
+
+}
+
+
+/*=========================================================================*/
+/*                    MICRO INTERACTIE 2 – VERHAAL OPSLAAN                 */
+/*               DEZE MICROINTERACTIE VIND JE DE DETAILPAGINA                */
+/*=========================================================================*/
+
+
+/*opslaan knop*/
+footer button:nth-of-type(2){
     height: 2.5em;
     font-size: 1em;
     font-weight: 700;
     font-style: normal;
     padding: 0.5em;
     text-transform: uppercase;
-    background-color: #A2388D;
-    color: #fff;
+    background-color: lightgray;
+    border-radius: 0.1875em;
+    animation: slow-animatie 1s;
+    box-shadow: 0em 0.25em rgb(192, 192, 192);
+}
+
+footer button:nth-of-type(2):hover{
+      background-color: #FFDF5D;
+    transition: background 1s;
+    box-shadow: 0em 0.25em rgb(204, 204, 0);
+    color: black;
+
+/*    AFMAKEN*/
+}
+
+#verhaal-droom div p {
+/*    margin-left:1em;*/
+/*    padding-top: -6em;*/
+    margin-top: -0.3em;
+    border-bottom: none;
+    color: #2b3940;
+    font-family: museo-sans, sans-serif;
+    font-weight: 700;
+
 }
 
 
+#popup{
+    display: inline;
+    background: #fff;
+    border: 6px solid rgb(133, 12, 122);
+    text-align: center;
+    padding-top: 2rem;
+/*    position: fixed;*/
+    position: absolute;
+    width: 20rem;
+/*    height: 9em;*/
+    height: 8em;
+    z-index: 1;
+    left: calc(50% - 10rem);
+    top: calc(50% - 10rem);
+    transition: .5s ease-out all;
+    opacity: 1;
 
+
+}
+
+/*
+button{
+    padding: 1rem 2rem;
+    display: block;
+    margin: 1rem auto;
+}
+*/
+
+#popup.hidden{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(1rem) scale(.99);
+
+}
+
+.togglePopup:nth-of-type(1){
+    background-color: purple;
+
+}
+.togglePopup:nth-of-type(1):hover{
+    color: #000000;
+    border-color: #FFDF5D;
+        background-color: #FFDF5D;
+    box-shadow: 0em 0.25em rgb(204, 204, 0);
+}
 
 
 /*=========================================================================*/
-/*                       PLAATS REACTIE - FORMULIER                        */
-/*=========================================================================*/
-
-/*DEZE IS MOMENTEEL LEEG*/
-
-
-
-
-
-.
-/*=========================================================================
 /*                          STYLING PROFIElPAGINA                          */
 /*=========================================================================*/
 
-
-section#ingelogd {
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 1em;
-}
-
-section#ingelogd h1{
-    font-size: 2em;
+#ingelogd > main h1 {
+/*    font-size: 2em;*/
     font-weight: 700;
     font-style: normal;
     padding-left: 1rem;
-        margin-top: 3.5em;
-        color: purple;
-    }
+    color: #800080;
+}
 
-section#ingelogd h2{
-       color: #2b4040;
+#ingelogd main h2 {
+    color: #2b4040;
     font-size: 1.5em;
     font-weight: 700;
     font-style: normal;
@@ -850,124 +905,149 @@ section#ingelogd h2{
     margin-bottom: 1em;
 }
 
-
 /*=========================================================================*/
 /*                                 MEDIA QUERIES                           */
 /*=========================================================================*/
 
-/
-
 
 /*RESPONSIVE VOOR TABLET*/
+
+
 @media screen and (min-width: 50em) {
 
     section h1 {
-        color: #fff;
+         color: #fff;
     }
 
-    section article {
-        display: inline;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 80%;
+    main{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    article {
+    min-height: 6em;
 
     }
 
+    /*Lees meer knop*/
+    article footer a {
+    margin: 4em 0em 0rem 10em;
+    background-color: #808080;
+    border: 1px solid #808080;
+}
+
+    /*Titel tekst in het article*/
     div h4 {
-        margin: 0.8em 0em 0.98em 0em;
+    margin: 0.7em 0em 01em 0em;
     }
 
-    span.waardering {
-        margin: -5em 9em 1em 20em;
-    }
-
-    footer p {
-        padding: 0em 1em 1em 0rem;
-        margin: 4em 1em 0.6em 1em
-    }
-
-    .btn-lees-meer {
-        margin: 0em 0em 0rem 10em;
-    }
-
-
-
-
-        body#account label {
-    }
-
-
-.modal-content {
-    margin-top: 12em;
-    margin-left: 1.5em;
+    /*Ster in het article*/
+    div span {
+    margin: -0.2em 9em 1em 19em;
+    padding-bottom: 0.2em;
 }
 
-.modal-content button {
-    margin-right: 36.5em;
-    margin-top: 3em;
+    /*Gele grote button onderaan de pagina*/
+    main > footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
 }
 
 
+/*Titel tekst van het verhaal, de detailpagina*/
+#verhaal-droom main > h1 {
+    padding-right: 3em;
+    }
+
+    /*Tekst van het verhaal*/
+    section span p {
+    margin-left: 8em;
+    margin-right: 5em;
+    }
+
+    /*Labels van het formulier*/
+    body#account fieldset label {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    padding: 0.6em;
+    padding-left: 15em;
+}
+
+}
+/*Einde van de media querie van de tablet*/
 
 
 
-    /*RESPONSIVE VOOR DESKTOP*/
-    @media screen and (min-width: 60em) {
 
+/*RESPONSIVE VOOR DESKTOP*/
+@media screen and (min-width: 60em) {
         section h1 {
-            color: #fff;
-        }
+         color: #fff;
+    }
 
-        section article {
-            width: 30%;
-            min-height: 250px;
-            float: left;
-            padding-bottom: 6px;
-        }
+    main{
+        display: flex;
+        justify-content: space-around;
+    }
 
-        div h4 {
-            margin: 0.8em 0em 0.98em 0em;
-        }
-
-        span.waardering {
-            margin: -5em 9em 1em 19em;
-        }
-
-        footer p {
-            padding: 0em 1em 1em 0rem;
-            margin: 4em 1em 0.6em 1em
-        }
-
-        .btn-lees-meer {
-            margin: 0em 0em 0rem 9em;
-        }
-
-        body#account label {
-    margin-left: 28.5em;
-
-}
-
-
-
-
-
-
-
-
-
-
-        .modal-content {
-    margin-top: 1em;
-    margin-left: 5.5em;
-}
-
-        .modal-content button {
-    margin-right: 57.1em;
-    margin-top: 3em;
-}
-
-
+    article {
+    min-height: 6em;
 
     }
 
-    /*Einde van de media querie van de desktop*/
+    /*Lees meer knop*/
+    article footer a {
+    margin: 4em 0em 0rem 10em;
+    background-color: #808080;
+    border: 1px solid #808080;
+}
+
+    /*Titel tekst in het article*/
+    div h4 {
+    margin: 0.7em 0em 01em 0em;
+    }
+
+    /*Ster in het article*/
+    div span {
+    margin: -0.2em 9em 1em 19em;
+    padding-bottom: 0.2em;
+}
+
+    /*Gele grote button onderaan de pagina*/
+    main > footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+
+/*Titel tekst van het verhaal, de detailpagina*/
+#verhaal-droom main > h1 {
+    margin-left:3em;
+    }
+
+    /*Tekst van het verhaal*/
+    section span p {
+    margin-left: 17em;
+        margin-right: 6em;
+        justify-content: center;
+    }
+
+
+    /*Labels van het formulier*/
+    body#account fieldset label {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    padding: 0.6em;
+    padding-left: 28.5em;
+}
+}
+
+
+}
+/*Einde van de media querie van de desktop*/

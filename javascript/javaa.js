@@ -1,51 +1,39 @@
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
 
-//  MICRO INTERACTIE "OPSLAAN" //
 
+// MICRO INTERACTIE 1: DOWNLOAD BUTTON //
+var buttonInloggen = document.querySelectorAll("footer button");
 
-// Verkrijg de modal
-var modal = document.getElementById('popup');
+console.log(buttonInloggen)
 
-
-// Download de knop waarmee het modale wordt geopend
-var btn = document.getElementById("opslaan");
-
-// Roept het <span> element aan dat het modal sluit.
-var span = document.getElementsByClassName("close")[0];
-
-// Wanneer de gebruiker op de button "opslaan" klikt wordt het  content blokje geopend
-btn.onclick = function() {
-  modal.style.display = "block";
+for(var i=0; i< buttonInloggen.length; i++){
+    buttonInloggen[i].addEventListener("click", function(){
+   var melding = document.querySelector("header nav section")
+   melding.classList.toggle("show");
+})
 }
 
-// Wanneer de gebruiker op "sluiten" klikt, wordt het content blokje gesloten.
-span.onclick = function() {
-  modal.style.display = "none";
+// MICRO INTERACTIE 2: VERHAAL OPSLAAN //
+const
+    popup = document.getElementById('popup'),
+    enablePopup = document.getElementsByClassName('togglePopup');
+
+for (let i = 0; i < enablePopup.length; i++) {
+    const el = enablePopup[i];
+
+    el.addEventListener('click',getPopup)
+
 }
 
-// Als de gebruiker buiten het content blokje klikt, wordt het ook gesloten.
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+function getPopup(){
+    popup.classList.toggle('hidden');
 }
 
 
 
-
-
-
-
-
-//Animate On Scroll script//
+/* DE INTERACTIE VOOR HET SCROLLENDE VERHAAL IS AFKOMSTIG VAN ANIMATE OM SCROLL
+ Bron: https://michalsnik.github.io/aos */
 AOS.init({
-  easing: 'ease-in-out',
+ easing: 'ease-in-out',
+
 });
-
-//AOS.init({
-//  offset: 200,
-//  duration: 800,
-//  easing: 'ease-in-quad',
-//  delay: 500,
-//});
-

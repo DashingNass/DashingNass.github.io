@@ -18,34 +18,40 @@
 
 
 <body id="account" action="#">
-    <div>
-        <header class="header">
-            <nav>
-                <ul>
-                    <li><img src="img/ster-paars.svg" alt="favorieten icoon"></li>
-                    <li><a href="index.html"><img class="logo" src="img/wow-air-logo.svg" alt="logo WOW air"></a></li>
-                    <li><a href="#"></a><img src="img/profile.svg" alt="profiel"></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+
+
+       <header>
+        <nav>
+            <ul>
+                <li><button>favorieten</button></li>
+                <li>
+                    <a href="index.html">
+                        <img src="/img/wow-air-logo.svg" alt="WOW air logo">
+                    </a>
+                </li>
+                <li><button><a href="account.html">inloggen</a></button></li>
+
+            </ul>
+        </nav>
+    </header>
+
 
     <form action="account_ingelogd.html" method="get">
         <fieldset>
             <legend>Account aanmaken</legend>
 
             <label for="input-name">Voornaam</label>
-            <input id="name" type="text" placeholder="Jacob" required>
+            <input id="input-name" type="text" placeholder="Jacob" required>
 
             <label for="input-surname">Achternaam</label>
-            <input id="surname" type="text" placeholder="Rabbit" required>
+            <input id="input-surname" type="text" placeholder="Rabbit" required>
 
 
            <label for="input-email">E-mail</label>
-            <input id="email" type="email" placeholder="gebruiker@mail.nl" required>
+            <input id="input-email" type="email" placeholder="gebruiker@mail.nl" required>
 
     <label for="psw"><b>Wachtwoord</b></label>
-    <input type="password" placeholder="Vul wachtwoord in" name="psw" required>
+    <input type="password" placeholder="Vul wachtwoord in" id="psw" required>
 
 
             <input type="submit" value="Registreer">
