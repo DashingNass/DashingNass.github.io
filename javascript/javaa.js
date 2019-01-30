@@ -2,16 +2,22 @@
 
 
 // MICRO INTERACTIE 1: DOWNLOAD BUTTON //
-var buttonInloggen = document.querySelectorAll("footer button");
+var buttonsInloggen = document.querySelectorAll("footer button");
 
-console.log(buttonInloggen)
+console.log(buttonsInloggen)
 
-for(var i=0; i< buttonInloggen.length; i++){
-    buttonInloggen[i].addEventListener("click", function(){
-   var melding = document.querySelector("header nav section")
-   melding.classList.toggle("show");
-})
+for(var i=0; i< buttonsInloggen.length; i++){
+    buttonsInloggen[i].addEventListener("click", function(){
+        var melding = document.querySelector("header nav section")
+        melding.classList.toggle("show");
+    });
 }
+
+
+
+
+
+
 
 // MICRO INTERACTIE 2: VERHAAL OPSLAAN //
 const
